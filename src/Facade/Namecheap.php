@@ -23,6 +23,7 @@ use Namecheap\Whoisguard\Whoisguard;
  * @method static Users users()
  * @method static UsersAddress usersAddress()
  * @method static Whoisguard whoisguard()
+ * @method static void enabledSandbox($enable = true)
  */
 class Namecheap extends Facade
 {

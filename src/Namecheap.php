@@ -76,6 +76,8 @@ class Namecheap
         $this->users = new Users($this->client);
         $this->usersAddress = new UsersAddress($this->client);
         $this->whoisguard = new Whoisguard($this->client);
+
+        $this->enableSandbox(boolval($config['enableSandbox']));
     }
 
     /**
@@ -140,5 +142,30 @@ class Namecheap
     public function whoisguard(): Whoisguard
     {
         return $this->whoisguard;
+    }
+
+    /**
+     * @param bool $enable
+     */
+    public function enableSandbox($enable = true) {
+        if ($enable) {
+            $this->domains->enableSandbox();
+            $this->domainsDns->enableSandbox();
+            $this->domainsNs->enableSandbox();
+            $this->domainsTransfer->enableSandbox();
+            $this->ssl->enableSandbox();
+            $this->users->enableSandbox();
+            $this->usersAddress->enableSandbox();
+            $this->whoisguard->enableSandbox();
+        } else {
+            $this->domains->disableSandbox();
+            $this->domainsDns->disableSandbox();
+            $this->domainsNs->disableSandbox();
+            $this->domainsTransfer->disableSandbox();
+            $this->ssl->disableSandbox();
+            $this->users->disableSandbox();
+            $this->usersAddress->disableSandbox();
+            $this->whoisguard->disableSandbox();
+        }
     }
 }
