@@ -15,13 +15,13 @@ class NamecheapServiceProvider extends ServiceProvider
             return new Namecheap(config('namecheap'));
         });
 
-        $this->mergeConfigFrom(__DIR__.'/../../../config/namecheap.php', 'namecheappackage');
+        $this->mergeConfigFrom(__DIR__.'/../config/namecheap.php', 'namecheappackage');
     }
 
     public function boot() {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../../../config/namecheap.php' => config_path('namecheap.php'),
+                __DIR__.'/../config/namecheap.php' => config_path('namecheap.php'),
             ], 'config');
         }
 
