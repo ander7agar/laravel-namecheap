@@ -8,7 +8,7 @@ composer require gotcreations/laravel-namecheap
 ```
 
 ### The provider
-The service provider class is is registered automatically in a Laravel project.
+The service provider class is registered automatically in a Laravel project.
 
 ### Configuration
 Get your config file
