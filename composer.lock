@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8f1fef7af1b25b1148efa95bcbeccb9",
+    "content-hash": "d0be69bc6c2c4aad56cc9694352b4a76",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -98,11 +98,17 @@
         },
         {
             "name": "gotcreations/namecheap-sdk",
-            "version": "dev-master",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ander7agar/namecheap-sdk.git",
+                "reference": "f719063c58234fa4f9ac127117c45af6ed615ee3"
+            },
             "dist": {
-                "type": "path",
-                "url": "../namecheap-sdk",
-                "reference": "fa7991fef1f3de6618afbd1793be7f6cb9ada625"
+                "type": "zip",
+                "url": "https://api.github.com/repos/ander7agar/namecheap-sdk/zipball/f719063c58234fa4f9ac127117c45af6ed615ee3",
+                "reference": "f719063c58234fa4f9ac127117c45af6ed615ee3",
+                "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
@@ -117,6 +123,7 @@
                     "Namecheap\\": "src/Namecheap"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -132,14 +139,16 @@
             ],
             "description": "SDK library for Namecheap APIs",
             "keywords": [
-                "Namecheap",
                 "api",
+                "namecheap",
                 "namecheap SDK",
                 "namecheap php"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/ander7agar/namecheap-sdk/issues",
+                "source": "https://github.com/ander7agar/namecheap-sdk/tree/v1.1.0"
+            },
+            "time": "2021-02-20T20:23:50+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -973,9 +982,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "gotcreations/namecheap-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

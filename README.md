@@ -1,5 +1,8 @@
 # Namecheap Api for Laravel
-[![Latest Stable Version](https://poser.pugx.org/gotcreations/laravel-namecheap/v)](//packagist.org/packages/gotcreations/laravel-namecheap) [![Total Downloads](https://poser.pugx.org/gotcreations/laravel-namecheap/downloads)](//packagist.org/packages/gotcreations/laravel-namecheap) [![Latest Unstable Version](https://poser.pugx.org/gotcreations/laravel-namecheap/v/unstable)](//packagist.org/packages/gotcreations/laravel-namecheap) [![License](https://poser.pugx.org/gotcreations/laravel-namecheap/license)](//packagist.org/packages/gotcreations/laravel-namecheap)
+[![Latest Stable Version](https://poser.pugx.org/gotcreations/laravel-namecheap/v)](//packagist.org/packages/gotcreations/laravel-namecheap) 
+[![Total Downloads](https://poser.pugx.org/gotcreations/laravel-namecheap/downloads)](//packagist.org/packages/gotcreations/laravel-namecheap) 
+[![Latest Unstable Version](https://poser.pugx.org/gotcreations/laravel-namecheap/v/unstable)](//packagist.org/packages/gotcreations/laravel-namecheap) 
+[![License](https://poser.pugx.org/gotcreations/laravel-namecheap/license)](//packagist.org/packages/gotcreations/laravel-namecheap)
 
 
 ### Installation
@@ -24,7 +27,7 @@ return [
     'apiKey' => env('NC_API_KEY', 'key'), //Your namecheap API Key
     'clientIp' => env('NC_API_CLIENT_IP', '127.0.0.1'),
     'enableSandbox' => env('NC_API_SANDBOX', true), //For production env disable it
-    'returnType' => 'json', //Or xml
+    'returnType' => 'json', //Or array, xml, string 
 ];
 ```
 
